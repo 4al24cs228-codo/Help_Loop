@@ -1,0 +1,6 @@
+{
+  "name": "HelpLoop",
+  "description": "A social impact platform for donating, volunteering, transparent community fundraising, and verified local help.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
