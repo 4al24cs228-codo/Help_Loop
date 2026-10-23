@@ -13,12 +13,7 @@ export default function SignupPage() {
   const [agreed, setAgreed] = useState(false);
   const [error, setError] = useState('');
 
-  // Auto-redirect if already authenticated
-  useEffect(() => {
-    if (isAuthenticated) {
-      navigate('/home', { replace: true });
-    }
-  }, [isAuthenticated, navigate]);
+
 
   const passwordStrength = (pwd: string) => {
     if (pwd.length === 0) return 0;

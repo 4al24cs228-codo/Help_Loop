@@ -33,12 +33,7 @@ export const LoginPage: React.FC = () => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<{ email?: string; password?: string }>({});
 
-  // Auto-redirect if already authenticated
-  React.useEffect(() => {
-    if (isAuthenticated) {
-      navigate('/home', { replace: true });
-    }
-  }, [isAuthenticated, navigate]);
+
 
   const validateForm = (): boolean => {
     const errors: { email?: string; password?: string } = {};

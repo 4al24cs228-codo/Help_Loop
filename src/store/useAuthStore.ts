@@ -72,9 +72,9 @@ const mockDefaultUser: User = {
 export const useAuthStore = create<AuthState>()(
   persist(
     (set, get) => ({
-      user: mockDefaultUser,
-      currentUser: mockDefaultUser,
-      isAuthenticated: true,
+      user: null,
+      currentUser: null,
+      isAuthenticated: false,
       isLoading: false,
       error: null,
 
